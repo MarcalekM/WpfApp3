@@ -1,0 +1,69 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="580" Width="1100">
+    <Grid>
+        <Label Content="Scrum tesz" Height="35" Margin="0,22,0,0" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontFamily="Times New Roman" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <Label Content="Neved:" HorizontalAlignment="Left" Margin="70,70,0,0" VerticalAlignment="Top" Width="93" Height="30" FontFamily="Times New Roman"/>
+        <Label Content="E-mail címed:" HorizontalAlignment="Left" Margin="70,130,0,0" VerticalAlignment="Top" Width="93" Height="30" FontFamily="Times New Roman"/>
+        <TextBox HorizontalAlignment="Left" Margin="170,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30" FontFamily="Times New Roman"/>
+        <TextBox HorizontalAlignment="Left" Margin="170,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30" FontFamily="Times New Roman" Background="#FFC8C0C0" FontSize="18"/>
+        <Label Content="1. Ki a Scrum csapat vezetője?" HorizontalAlignment="Left" Margin="70,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="170" FontFamily="Times New Roman">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.051"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ListBox Margin="70,215,810,264" FontFamily="Times New Roman">
+            <ListBoxItem Content="Product Owner"/>
+            <ListBoxItem Content="Scrum Master"/>
+            <ListBoxItem Content="Developer Team"/>
+        </ListBox>
+
+        <Label Content="2. Milyen módszertan a Scrum módszertan?" HorizontalAlignment="Left" Margin="70,300,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="70,331,0,0" VerticalAlignment="Top" Width="146" FontFamily="Times New Roman">
+            <ComboBoxItem Content="Sprint Planning Meeting"/>
+            <ComboBoxItem Content="Daily Conversion"/>
+            <ComboBoxItem Content="Sprint Retrospective"/>
+            <ComboBoxItem Content="Backlog Grooming"/>
+        </ComboBox>
+        <Label Content="3. Milyen eseményeket ismersz a Scrumban?" HorizontalAlignment="Left" Margin="70,390,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="4. Milyen dokumentumokat ismersz a Scrumban?" HorizontalAlignment="Center" Margin="0,197,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="5. Milyen típusú módszertan a Scrum?" HorizontalAlignment="Left" Margin="415,342,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <StackPanel Margin="70,420,790,60">
+            <CheckBox Content="Sprint Planning Meeting" FontFamily="Times New Roman"/>
+            <CheckBox Content="Daily Conversion" FontFamily="Times New Roman"/>
+            <CheckBox Content="Sprint Retrospective" FontFamily="Times New Roman"/>
+            <CheckBox Content="Backlog Grooming" FontFamily="Times New Roman"/>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Margin="415,85,0,0" TextWrapping="Wrap" Text="Ez a teszt arra szolgál, hogy felmérje a tudásodat a Scrum módszertannal kapcsolatban. Amennyiben a teszt eredménye sikeres, veregesd meg a bal vállad a jobb kezeddel. Amennyiben nem sikeres a teszt, itt az ideje tanulni, mert nemsokára számonkérés következik a fenti módszertan anyagából." VerticalAlignment="Top" Height="90" Width="260" FontFamily="Times New Roman" TextAlignment="Justify"/>
+        <TextBox HorizontalAlignment="Left" Margin="170,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30" FontFamily="Times New Roman" BorderBrush="{x:Null}" Background="#FFC8C0C0" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Margin="415,390,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" Height="30" FontFamily="Times New Roman" Background="#FFC8C0C0" FontSize="18"/>
+        <Button Content="Kész" HorizontalAlignment="Left" Margin="488,447,0,0" VerticalAlignment="Top" Height="30" Width="90" FontFamily="Times New Roman" FontSize="20"/>
+        <Label Content="Válaszok:" HorizontalAlignment="Left" Margin="868,57,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="1. feladat:" HorizontalAlignment="Left" Margin="816,110,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <StackPanel Margin="415,228,415,238">
+            <RadioButton Content="Product Backlog" FontFamily="Times New Roman"/>
+            <RadioButton Content="Sprint Retrospective" FontFamily="Times New Roman"/>
+            <RadioButton Content="Daily Scrum" FontFamily="Times New Roman"/>
+        </StackPanel>
+        <Label Content="2. feladat:" HorizontalAlignment="Left" Margin="816,150,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="3. feladat:" HorizontalAlignment="Left" Margin="816,200,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="4. feladat:" HorizontalAlignment="Left" Margin="816,280,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="5. feladat:" HorizontalAlignment="Left" Margin="816,330,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="897,130,0,0" VerticalAlignment="Top" Width="146" FontFamily="Times New Roman" Background="#FF83E3F5"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="897,181,0,0" VerticalAlignment="Top" Width="146" FontFamily="Times New Roman" Background="#FF83E3F5"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="897,310,0,0" VerticalAlignment="Top" Width="146" FontFamily="Times New Roman" Background="#FF83E3F5"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="897,355,0,0" VerticalAlignment="Top" Width="146" FontFamily="Times New Roman" Background="#FF83E3F5"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=3}" Margin="897,222,57,272" FontFamily="Times New Roman"/>
+
+    </Grid>
+</Window>
